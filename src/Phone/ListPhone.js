@@ -54,9 +54,11 @@ class ListPhone extends Component {
         const indexPhone = phonesBasket.map((i, index)=>{
             if (i.name === phoneName) return index;
         });
-        const newPhoneList = phonesBasket.splice(indexPhone, 1);
         
-        localStorage.setItem('phonesBasket', JSON.stringify(newPhoneList));
+        phonesBasket.splice(indexPhone, 1);
+        
+        localStorage.setItem('phonesBasket', JSON.stringify(phonesBasket));
+        
         phones[index].isBasket = false;
 
         localStorage.setItem('phones', JSON.stringify(phones));
