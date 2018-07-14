@@ -1,0 +1,20 @@
+.list-phone {
+    padding: 15px 20px 20px 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list-phone__title {
+    padding: 10px 0 0 83px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.phone {
+    padding: 25px 20px 0 0;
+}
+
+.phone__link {
+    text-decoration: none;
+    color: cadetblue;
+}
